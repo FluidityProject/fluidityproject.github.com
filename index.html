@@ -4,52 +4,108 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Fluidity on GitHub : Fluidity GitHub Pages" />
+    <meta name="description" content="Fluidity - CFD on Finite Element Unstructured Meshes" />
+    <link media="all" rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Fluidity on GitHub</title>
+    <title>Fluidity - CFD on Finite Element Unstructured Meshes</title>
   </head>
 
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
+        <header>
+         <hgroup>
           <a id="forkme_banner" href="https://github.com/FluidityProject">View on GitHub</a>
-
-          <h1 id="project_title">Fluidity on GitHub</h1>
-          <h2 id="project_tagline">Fluidity GitHub Pages</h2>
+           <h1>
+            <a href="https://github.com/fluidityproject">
+                <img src="images/fluiditylogo-transparent.png" alt="Fluidity" />
+            </a>
+           </h1>
+          <h2 id="project_tagline">Computational Fluid Dynamics on Unstructured
+Finite Element Meshes</h2>
+         </hgroup>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/FluidityProject/fluidity/wiki/FAQ%3A-How-do-I-install-Fluidity-on-Ubuntu-LTS%3F">Get Fluidity<i class="icon-download-alt icon-large"></i></a></li>
+                <li><a href="manual/">Read the manual<i class="icon-cloud icon-large"></i></a></li>
+                <li><a href="https://github.com/FluidityProject/fluidity/wiki/">Applications<i class="icon-book icon-large"></i></a></li>
+            </ul>
+        </nav>
 
         </header>
-    </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-fluidity-on-github" class="anchor" href="#welcome-to-fluidity-on-github"><span class="octicon octicon-link"></span></a>Welcome to Fluidity on GitHub</h3>
+      <section id="introduction" class="introduction">
 
-<p>Fluidity is an open source, general purpose, multi-phase computational fluid dynamics code capable of numerically solving the Navier-Stokes equation and accompanying field equations on arbitrary unstructured finite element meshes in one, two and three dimensions. It is used in a number of different scientific areas including geophysical fluid dynamics, computational fluid dynamics, ocean modelling and mantle convection. It uses a finite element/control volume method which allows arbitrary movement of the mesh with time dependent problems, allowing mesh resolution to increase or decrease locally according to the current simulated state. It has a wide range of element choices including mixed formulations.</p>
+<img class="flowright" src="images/tsunami.png" alt="" />
+<img class="flowleft" src="images/fluiditylogo-transparent.png" alt="" />
 
-<p>Fluidity can be installed on Ubuntu from binary packages in the fluidity-core PPA ( <a href="https://launchpad.net/%7Efluidity-core/+archive/ppa">https://launchpad.net/~fluidity-core/+archive/ppa</a> ) with:</p>
+<p>is an open source, general purpose, multi-phase computational fluid
+dynamics code capable of numerically solving the Navier-Stokes equation and
+accompanying field equations on arbitrary unstructured finite element meshes in
+one, two and three dimensions.</p>
 
-<p>sudo apt-add-repository ppa:fluidity-core/ppa</p>
+<p>It is used in a number of different scientific areas including geophysical fluid dynamics, computational fluid dynamics, ocean modelling and mantle convection. It uses a finite element/control volume method which allows arbitrary movement of the mesh with time dependent problems, allowing mesh resolution to increase or decrease locally according to the current simulated state. It has a wide range of element choices including mixed formulations.</p>
 
-<p>sudo apt-get update</p>
+<p>Fluidity is parallelised using MPI and is capable of scaling to many
+thousands of processors. Other innovative and novel features are a
+user-friendly GUI and a python interface which can be used to calculate
+diagnostic fields, set prescribed fields or set user-defined boundary
+conditions.</p>
 
-<p>sudo apt-get -y install fluidity</p>
-
-<p>[FAQs | <a href="https://github.com/FluidityProject/fluidity/wiki/FAQs">https://github.com/FluidityProject/fluidity/wiki/FAQs</a> ] for Fluidity</p>
       </section>
-    </div>
+      <section id="Distribution" class="distribution">
+      <header><h1>Distribution</h1></header>
+
+	<p>Fluidity is primarily supported on two Linux platforms: Ubuntu LTS
+12.04 and 14.04, and CentOS/RHEL 6. Installation of the binary Fluidity package 
+on a clean install for either platform should be straightforward, as
+follows:</p>
+
+<p>To install on Ubuntu LTS 12.04 or 14.04, type:</p>
+
+<p><i>sudo apt-add-repository ppa:fluidity-core/ppa<br/>
+sudo apt-get update<br>
+sudo apt-get install fluidity</i></p>
+
+<p>To install on CentOS/RHEL 6, <a href="https://fedoraproject.org/wiki/EPEL">
+add the EPEL repository to your system</a> and then type:
+
+<p><i>sudo yum-config-manager --add-repo http://fluidityproject.github.com/yum/fluidity-rhel6.repo<br/>
+sudo yum install fluidity</i></p>
+
+      </section>
+      <section id="Contribute" class="contribute">
+      <header><h1>Contribute</h1></header>
+
+        <p>Fluidity is a community project and warmly welcomes developers and
+users who wish to contribute to the codebase. If you are interested in
+contributing, please contact <a
+href="http://www.imperial.ac.uk/people/m.d.piggott">Matt Piggott</a> for more
+information. We ask all contributors to ensure that their work complies with 
+our <a
+href="https://github.com/FluidityProject/fluidity/wiki/Copyright-clearance-procedures">
+copyright clearance procedures</a>.</p>
+
+      </section>
+      <section id="Collaborators" class="collaborators">
+      <header><h1>Collaborators</h1></header>
+
+	<p>Fluidity has benefited from work contributed by staff at a number of
+companies and institutions, including Imperial College London, University of
+Oxford, University of Reading, National Oceanograpy Centre Southampton, Herriot
+Watt University, Numerical Algorithms Group, Museum für Naturkunde Berlin,
+Florida State University, Columbia University, Chinese Academy of Sciences, The
+University of Edinburgh, and the Australian National University.</p>
+
+      </section>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+      <footer>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
-    </div>
 
     
 
