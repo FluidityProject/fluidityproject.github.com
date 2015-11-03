@@ -15,10 +15,12 @@
         .bg-1 { 
                background-color: #9FDFFF;
                color: #008CD2;
+               padding-top: 120px;
+               padding-bottom: 120px;
               }
         .bg-2 { 
-               background-color: #008CD2; /* Dark Blue */
-               color: #ffffff;
+               background-color: #E5F5FF;
+               color: #555555;
               }
         .bg-3 { 
                background-color: #ffffff; /* White */
@@ -41,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html"><img src="images/fluiditylogo-transparent-small.png" alt="Fluidity"/></a>
+          <li><a class="navbar-brand" href="./index.html"><img src="images/fluiditylogo-transparent-small.png" alt="Fluidity"/></a></li>
         </div>
         <div class="collapse navbar-collapse" id="NavigationBar">
           <ul class="nav navbar-nav navbar-right">
@@ -61,7 +63,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid bg-1 text-center padding">
+    <div class="container-fluid bg-1 text-center">
       <img src="images/fluiditylogo-transparent.png" alt="The Fluidity CFD/GFD code">
       <h1>Computational Fluid Dynamics on Unstructured Finite Element Meshes</h1>
     </div>
@@ -78,45 +80,30 @@ diagnostic fields, set prescribed fields or set user-defined boundary
 conditions.</p>
       </section>
 
-      <section id="Application Areas" class="container-fluid bg-3 text-left padding">
+      <section id="ApplicationAreas" class="container-fluid bg-3 text-left padding">
+      <h1>Application Areas</h1>
 <p>Fluidity  is used in a number of different scientific areas including geophysical fluid dynamics, computational fluid dynamics, ocean modelling and mantle convection. It uses a finite element/control volume method which allows arbitrary movement of the mesh with time dependent problems, allowing mesh resolution to increase or decrease locally according to the current simulated state. It has a wide range of element choices including mixed formulations.</p>
       </section>
 
       <section id="Distribution" class="container-fluid bg-2 text-left padding">
       <header><h1>Distribution</h1></header>
-	<p>Fluidity is primarily supported on two Linux platforms: Ubuntu LTS
-12.04 and 14.04, and CentOS/RHEL 6. Installation of the binary Fluidity package 
-on a clean install for either platform should be straightforward, as
-follows:</p>
-
-<p>To install on Ubuntu LTS 12.04 or 14.04, type:</p>
-
-<p><i>sudo apt-add-repository ppa:fluidity-core/ppa<br/>
-sudo apt-get update<br>
-sudo apt-get install fluidity</i></p>
-
-<p>To install on CentOS/RHEL 6, <a href="https://fedoraproject.org/wiki/EPEL">
-add the EPEL repository to your system</a> and then type:
-
-<p><i>sudo yum-config-manager --add-repo http://fluidityproject.github.com/yum/fluidity-rhel6.repo<br/>
-sudo yum install fluidity</i></p>
+	<p>Fluidity is available free of charge under the LGPL v x.x.x. The source
+           code and manual are available (and maintained) via a <a href="https://github.com/FluidityProject/fluidity">GitHub repository</a>. We
+           also maintain installation packages for Ubuntu and RHEL/CentOS.</p>
+        <p><a href="./Distribution/index.html">Read more about the Fluidity distribution.</a></p>
       </section>
 
-      <section id="Testing" class="container-fluid bg-3 text-left padding">
-      <header><h1>Testing</h1></header>
-      </section>
-
-      <section id="Collaborators" class="container-fluid bg-2 text-left padding">
+      <section id="Collarorators" class="container-fluid bg-3 text-left padding">
       <header><h1>Collaborators</h1></header>
 	<p>Fluidity has benefited from work contributed by staff at a number of
 companies and institutions, including Imperial College London, University of
-Oxford, University of Reading, National Oceanograpy Centre Southampton, Herriot
+Oxford, University of Reading, National Oceanography Centre Southampton, Herriot
 Watt University, Numerical Algorithms Group, Museum für Naturkunde Berlin,
 Florida State University, Columbia University, Chinese Academy of Sciences, The
 University of Edinburgh, and the Australian National University.</p>
       </section>
 
-      <section id="contribute" class="container-fluid bg-3 text-left padding">
+      <section id="contribute" class="container-fluid bg-2 text-left padding">
       <header><h1>Do you want to contribute?</h1></header>
         <p>Fluidity is a community project and warmly welcomes developers and
 users who wish to contribute to the codebase. If you are interested in
