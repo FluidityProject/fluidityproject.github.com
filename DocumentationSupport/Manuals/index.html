@@ -7,30 +7,9 @@
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <style>
-        .padding {
-               padding-top: 70px;
-               padding-bottom: 70px;
-              }
-        .bg-1 { 
-               background-color: #9FDFFF;
-               color: #008CD2;
-              }
-        .bg-2 { 
-               background-color: #008CD2; /* Dark Blue */
-               color: #ffffff;
-              }
-        .bg-3 { 
-               background-color: #ffffff; /* White */
-               color: #555555;
-              }
-        body {font: 24px "Ubuntu", sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-             }
-      </style>
+      <link rel="stylesheet" type="text/css" href="../../stylesheets/new-stylesheet.css">
     </head>
-    <body>
+    <body id="thisPage">
 
    <!-- Navigation bar at the top -->
    <nav class="navbar navbar-default navbar-fixed-top">
@@ -41,11 +20,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="../../index.html">Home</a>
         </div>
         <div class="collapse navbar-collapse" id="NavigationBar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../../index.html">Home</a></li>
             <li><a href="#GetFluidity">Get Fluidity</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentation & Support
@@ -57,7 +35,6 @@
                 <li><a href="../TrainingWorkshop/index.html">Training Workshop</a></li> 
               </ul>
             </li>
-            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
           </ul>
         </div>
       </div>
@@ -69,22 +46,48 @@
 
     <!-- MAIN CONTENT -->
       <section id="Overview" class="container-fluid bg-2 text-left padding">
-<p>The Fluidity manuals are accesible as PDF files through the Figshare online digital repository. We have chosen a popular online digital repository as it allows us to obtain a Digital Object Identification (DOI) for the manual, making it citable.</p>
+        <p>The Fluidity manuals are accesible as PDF files through Figshare. We have
+           chosen a popular online digital repository as it allows us to obtain a
+           Digital Object Identification (DOI) for the manual, making it citable. The
+           manual is written using LaTeX and the code is distributed with the rest of
+           the Fluidity code.</p>
       </section>
 
       <section id="LatestVersion" class="container-fluid bg-3 text-left padding">
-<p>The manual of the latest version Fluidity (v4.1.12) is available <a href="http://dx.doi.org/10.6084/m9.figshare.1387713">here</a></p>
+        <p>The manual of the latest version Fluidity (v4.1.12) is available
+           <a href="http://dx.doi.org/10.6084/m9.figshare.1387713">here</a></p>
       </section>
 
       <section id="OtherVersions" class="container-fluid bg-2 text-left padding">
-<p>The manuals of earlier versions can be located <a href="https://github.com/FluidityProject/fluidity/wiki/The-Fluidity-Manual">here</a>, as well as information on the maual source code.</p>
+        <p>The manuals of earlier versions can be located <a href="https://github.com/FluidityProject/fluidity/wiki/The-Fluidity-Manual">here</a>, as well as information on the maual source code.</p>
       </section>
 
-    <!-- FOOTER  -->
-      <footer>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <!-- FOOTER  -->
+            <footer class="container-fluid text-center">
+        <a href="#thisPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
       </footer>
 
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $("footer a[href='#thisPage']").on('click', function(event) {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        });
+      });
+      </script>
     
 
   </body>

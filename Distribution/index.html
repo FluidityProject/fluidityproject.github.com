@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../stylesheets/new-stylesheet.css">
       </style>
     </head>
-    <body>
+    <body id="thisPage">
 
    <!-- Navigation bar at the top -->
    <nav class="navbar navbar-default navbar-fixed-top">
@@ -45,7 +45,7 @@
       <h1>Fluidity Distribution</h1>
       <p>As with all open source code, the Fluidity code is readily available to download.
          In addition we fully support Fluidity in the latest Ubuntu and CentOS/RHEL (linux)
-         operating systems. Some limited support exists for other operating systems.</p>
+         operating systems.</p>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -85,10 +85,32 @@ sudo yum install fluidity</i></p>
 	<p>Fluidity </p>
       </section>
 
-    <!-- FOOTER  -->
-      <footer>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <!-- FOOTER  -->
+      <footer class="container-fluid text-center">
+        <a href="#thisPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
       </footer>
+
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $("footer a[href='#thisPage']").on('click', function(event) {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        });
+      });
+      </script>
 
 
   </body>
