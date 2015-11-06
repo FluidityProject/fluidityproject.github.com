@@ -7,7 +7,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
+      </style>
     </head>
     <body id="thisPage">
 
@@ -18,22 +19,22 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavigationBar">
             <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
-          <a class="navbar-brand" href="../../index.html">
+          <a class="navbar-brand" href="../index.html">
             <span class="glyphicon glyphicon-home"></span>
           </a>
         </div>
         <div class="collapse navbar-collapse" id="NavigationBar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../../Distribution/index.html">Get Fluidity</a></li>
+            <li><a href="../Distribution/index.html">Get Fluidity</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentation & Support
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="../index.html">Overview</a></li>
-                <li><a href="../Manuals/index.html">Manuals</a></li>
+                <li><a href="./index.html">Overview</a></li>
+                <li><a href="../DocumentationSupport/Manuals/index.html">Manuals</a></li>
                 <li><a href="https://github.com/FluidityProject/fluidity/wiki">Wiki</a></li>
-                <li><a href="../MailingLists/index.html">Mailing Lists</a></li> 
-                <li><a href="../TrainingWorkshop/index.html">Training Workshop</a></li> 
+                <li><a href="../DocumentationSupport/MailingLists/index.html">Mailing Lists</a></li> 
+                <li><a href="../DocumentationSupport/TrainingWorkshop/index.html">Training Workshop</a></li> 
               </ul>
             </li>
           </ul>
@@ -42,27 +43,48 @@
     </nav>
 
     <div class="container-fluid bg-1 text-center padding">
-      <h1>Mailing lists</h1>
+      <h1>Fluidity Documentation & support</h1>
     </div>
 
     <!-- MAIN CONTENT -->
-      <section id="FluidityMailingList" class="container-fluid bg-2 text-left padding">
-        <p>The Fluidity electronic mailing list can be used to submit questions on Fluidity.
-           To post a question send an email to <a href="mailto:fluidity@imperial.ac.uk">fluidity@imperial.ac.uk</a>.
-           All posts are archived, but to access the archive you must first
-           <a href="https://mailman.ic.ac.uk/mailman/listinfo/fluidity">subscribe to the list</a>.
-           Following subscription you can <a href="https://mailman.ic.ac.uk/mailman/private/fluidity/">search the archives</a>.
-           Please be courteous in your posts and do not attach large files.
-        </p>
+      <section id="Overview" class="container-fluid bg-2 text-left padding">
+      <p>We will try to support you, should you choose to use Fluidity. Our ethos is
+         to also educate our users, so we provide documentation and support in the following
+         ways:
+      </p>
+      <br/>
+      <p>
+         The <a href="../DocumentationSupport/Manuals/index.html"> Fluidity manual</a> is a comprehensive document
+         describing the installation procedure, the equations and their numerical approximation, various 
+         parameterisations and embedded models, meshing and adaptive re-meshing and how to configure Fluidity,
+         visualisation of Fluidity output.
+      </p>
+      <br/>
+      <p>
+         The <a href="https://github.com/FluidityProject/fluidity/wiki">Fluidity wiki</a> is an on-line resource
+         which addresses issues that are routinelly encountered during fluidity installation and use.
+      </p>
+      <br/>
+      <p>
+         The <a href="../DocumentationSupport/MailingLists/index.html">Fluidity mailing list</a> allows users
+         to ask community of developers (& other users) questions.
+      </p>
+      <br/>
+      <p>
+         The <a href="../DocumentationSupport/TrainingWorkshop/index.html">Fluidity training workshop</a> is a series
+         of lectures on Fluidity installation and use.
+      </p>
       </section>
 
-      <section id="OtherMailingList" class="container-fluid bg-3 text-left padding">
-        <p>You will find more information about the Fluidity mailing list, as well as other useful mailing lists in our
-           <a href="https://github.com/FluidityProject/fluidity/wiki/Mailing-Lists">wiki</a></p>
+      <section id="thisPageDetails" class="container-fluid bg-3 text-left padding">
+      <h1>This page</h1>
+      <p>This page brings together all Fluidity resources. It is hosted on <a href="https://pages.github.com/">GitHub pages</a>, and is maintained
+         via a <a href="https://github.com/FluidityProject/fluidityproject.github.com">GitHub repository</a>.
+         We have used <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://glyphicons.com/">glyphicons</a></p>.
       </section>
 
       <!-- FOOTER  -->
-            <footer class="container-fluid text-center">
+      <footer class="container-fluid text-center">
         <a href="#thisPage" title="To Top">
           <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
@@ -87,7 +109,7 @@
         });
       });
       </script>
-    
+
 
   </body>
 </html>
