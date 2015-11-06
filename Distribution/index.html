@@ -17,11 +17,11 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavigationBar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Home</a>
+          <a class="navbar-brand" href="../index.html">
+            <span class="glyphicon glyphicon-home"></span>
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="NavigationBar">
           <ul class="nav navbar-nav navbar-right">
@@ -60,21 +60,18 @@
       <section id="UbuntuRHELDistribution" class="container-fluid bg-2 text-left padding">
       <header><h1>Ubuntu & CentOS/RHEL Distribution</h1></header>
 	<p>Fluidity is primarily supported on two Linux platforms: Ubuntu LTS
-12.04 and 14.04, and CentOS/RHEL 6. Installation of the binary Fluidity package 
-on a clean install for either platform should be straightforward, as
-follows:</p>
-
-<p>To install on Ubuntu LTS 12.04 or 14.04, type:</p>
-
-<p><i>sudo apt-add-repository ppa:fluidity-core/ppa<br/>
-sudo apt-get update<br>
-sudo apt-get install fluidity</i></p>
-
+           12.04 and 14.04, and CentOS/RHEL 6. Installation of the binary Fluidity package 
+           on a clean install for either platform should be straightforward.</p>
+        <br />
+        <p>To install on Ubuntu LTS 12.04 or 14.04, type:</p>
+       <pre>sudo apt-add-repository ppa:fluidity-core/ppa
+sudo apt-get update
+sudo apt-get install fluidity</pre>
+       <br />
 <p>To install on CentOS/RHEL 6, <a href="https://fedoraproject.org/wiki/EPEL">
 add the EPEL repository to your system</a> and then type:
-
-<p><i>sudo yum-config-manager --add-repo http://fluidityproject.github.com/yum/fluidity-rhel6.repo<br/>
-sudo yum install fluidity</i></p>
+<pre>sudo yum-config-manager --add-repo http://fluidityproject.github.com/yum/fluidity-rhel6.repo
+sudo yum install fluidity</pre>
 <p>You will find more information in our <a href"https://github.com/FluidityProject/fluidity/wiki/FAQ%3A-How-do-I-install-Fluidity-on-Ubuntu-LTS%3F">wiki</a></p>
       </section>
 
