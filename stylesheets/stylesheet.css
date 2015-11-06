@@ -24,11 +24,12 @@
       border-color: transparent;
       color: #fff !important;
   }
-  footer .glyphicon {
+  footer .glyphicon{
       font-size: 20px;
       margin-bottom: 20px;
       color: #008CD2;
   }
+  .glyphicon-menu-hamburger{color: #008CD2;}
       body {font: 400 20px "Ubuntu", sans-serif; line-height: 1.8; color: #f5f6f7;}
       a { color: #000090; text-decoration: none; }
       a:hover {text-decoration: underline;}
