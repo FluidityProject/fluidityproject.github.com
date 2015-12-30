@@ -1,0 +1,5 @@
+[Fluidity]
+name=Fluidity Packages for Fedora 22 - $basearch
+baseurl=https://raw.githubusercontent.com/FluidityProject/yum-fedora22/master/$basearch
+enabled=1
+gpgcheck=0
