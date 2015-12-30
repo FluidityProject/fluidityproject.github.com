@@ -3,7 +3,7 @@ title: Fluidity
 email: fluidity@imperial.ac.uk
 description: The Fluidity computational fluid dynamics project.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://fluidity-project.org" # the base hostname & protocol for your site
 
 twitter_username: AMCG_Imperial
 github_username: fluidityproject
